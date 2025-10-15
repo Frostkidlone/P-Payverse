@@ -4,10 +4,13 @@
   "private": true,
   "scripts": {
     "install": "npm install --prefix ./frontend && npm install --prefix ./backend",
-    "build": "npm run build --prefix ./frontend",
+    "build": "npm install --prefix ./frontend && npm run build --prefix ./frontend",
     "start": "npm run build && node ./backend/server.js"
   },
   "engines": {
     "node": "20.x"
+  },
+  "devDependencies": {
+    "vite": "^5.4.20"
   }
 }
