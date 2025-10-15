@@ -1,0 +1,1 @@
+import React from 'react'; export default function Wallet(){ return (<div className='container'><header style={{display:'flex',alignItems:'center',gap:12}}><div className='logo'>P‑PayVerse</div></header><div className='card' style={{marginTop:12}}><h3>Wallet (Mock)</h3><div className='small'>Balance: 120 Pi (mock)</div></div></div>) }

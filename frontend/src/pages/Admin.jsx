@@ -1,0 +1,1 @@
+import React from 'react'; export default function Admin(){ return (<div className='container'><header style={{display:'flex',alignItems:'center',gap:12}}><div className='logo'>P‑PayVerse — Admin</div></header><div className='card' style={{marginTop:12}}><h3>Admin</h3><div className='small'>Manage products & redemptions (mock)</div></div></div>) }

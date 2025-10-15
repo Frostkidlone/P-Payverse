@@ -1,0 +1,1 @@
+export const PiMock = { async authenticate(){ return { id:1, name:'Demo Pioneer', piHandle:'demo_1' } }, async pay({amount,to}){ return { success:true, txId:'MOCK_TX_'+Date.now(), amount } } }
