@@ -1,3 +1,6 @@
+setTimeout(() => {
+  // existing app.listen here
+}, 500);
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
