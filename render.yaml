@@ -2,6 +2,12 @@ services:
   - type: web
     name: p-payverse
     env: node
-    buildCommand: cd backend && npm install && cd ../frontend && npm install && npm run build && cp -r dist ../backend/public
-    startCommand: cd backend && npm start
+    buildCommand: |
+      cd backend
+      npm install
+      cd ../frontend
+      npm install
+      npm run build
+      cp -r dist ../backend/public
+    startCommand: cd backend && node server.js
     plan: free
