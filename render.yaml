@@ -1,7 +1,12 @@
 services:
   - type: web
-    name: p-payverse
+    name: p-payverse-backend
     env: node
-    buildCommand: npm run build
-    startCommand: npm start
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
     plan: free
+  - type: web
+    name: p-payverse-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/dist
